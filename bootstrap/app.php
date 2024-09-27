@@ -101,6 +101,7 @@ $getMillisecond = function () {
 };
 $app->register(App\Base\Providers\AppServiceProvider::class);
 $app->register(App\Base\Providers\EventServiceProvider::class);
+$app->register(Maatwebsite\Excel\ExcelServiceProvider::class);
 
 /*
  * 配置日志文件为每日
