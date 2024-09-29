@@ -76,13 +76,13 @@ class IndexController extends Controller
                 //表头字体
                 $cellRange = 'A1:E20';
                 $event->sheet->getDelegate()->getStyle($cellRange)->getFont()->setSize(16);
-                $event->sheet->getDelegate()->getColumnDimension('A')->setWidth(20);
-                $event->sheet->getDelegate()->getColumnDimension('B')->setWidth(20);
-                $event->sheet->getDelegate()->getColumnDimension('C')->setWidth(20);
-                $event->sheet->getDelegate()->getColumnDimension('D')->setWidth(20);
-                $event->sheet->getDelegate()->getColumnDimension('E')->setWidth(20);
+                $event->sheet->getDelegate()->getColumnDimension('A')->setWidth(18);
+                $event->sheet->getDelegate()->getColumnDimension('B')->setWidth(18);
+                $event->sheet->getDelegate()->getColumnDimension('C')->setWidth(18);
+                $event->sheet->getDelegate()->getColumnDimension('D')->setWidth(18);
+                $event->sheet->getDelegate()->getColumnDimension('E')->setWidth(18);
                 for ($i = 1; $i <= 20; $i++) {
-                    $event->sheet->getDelegate()->getRowDimension($i)->setRowHeight(20);
+                    $event->sheet->getDelegate()->getRowDimension($i)->setRowHeight(35);
                 }
 
                 $cellRange = 'A1:E20'; // 根据需要调整范围
