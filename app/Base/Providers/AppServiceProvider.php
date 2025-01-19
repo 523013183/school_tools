@@ -3,6 +3,7 @@
 namespace App\Base\Providers;
 
 use App\Api\Providers\ApiServiceProvider;
+use App\Mathematics\Providers\MathematicsServiceProvider;
 use App\Web\Providers\WebServiceProvider;
 use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
 
@@ -43,5 +44,6 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->register(WebServiceProvider::class);
         $this->app->register(ApiServiceProvider::class);
+        $this->app->register(MathematicsServiceProvider::class);
     }
 }
